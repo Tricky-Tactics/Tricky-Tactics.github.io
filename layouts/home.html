@@ -51,21 +51,15 @@
 			</div>
 			<div class="flex flex-row mt-6 justify-center gap-2 lg:justify-start">
 				<a href="#">
-					{{ with resources.Get "images/AppStore.png" }}
-					<img src="{{ .RelPermalink }}" class="h-10" alt="GooglePlay"/>
-					{{ end }}
+					<img src="/images/AppStore.png" class="h-10" alt="GooglePlay"/>
 				</a>
 				<a href="https://play.google.com/store/apps/details?id=com.trickyteam.trickytactics">
-					{{ with resources.Get "images/GooglePlay.png" }}
-					<img src="{{ .RelPermalink }}" class="h-10" alt="GooglePlay"/>
-					{{ end }}
+					<img src="/images/GooglePlay.png" class="h-10" alt="GooglePlay"/>
 				</a>
 			</div>
 		</div>
 		<div class="item flex justify-center">
-			{{ with resources.Get "images/iPhoneGameScreenshot.png" }}
-			<img src="{{ .RelPermalink }}" class="w-1/2" alt="Game Screenshot"/>
-			{{ end }}
+			<img src="/images/iPhoneGameScreenshot.png" class="w-1/2" alt="Game Screenshot"/>
 		</div>
 	</div>
 </main>

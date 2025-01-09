@@ -1,10 +1,8 @@
 ﻿<nav class="w-full text-gray-700 bg-white">
 	<div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
 		<div class="p-4 flex flex-row items-center justify-between">
-			<a href="{{ "/" | relURL }}">
-				{{ with resources.Get "images/logo.png" }}
-				<img src="{{ .RelPermalink }}" class="h-10 w-auto" alt="Logo"/>
-				{{ end }}
+			<a href="/">
+				<img src="/images/logo.png" class="h-10 w-auto" alt="Logo"/>
 			</a>
 			<button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
 				<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -15,7 +13,7 @@
 		</div>
 		<div :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 			<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Features</a>
-			<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="{{ "/releases" | relURL }}">Release Notes</a>
+			<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/releases">Release Notes</a>
 			<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Career</a>
 			<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About Us</a>
 			<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a>
