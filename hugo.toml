@@ -1,5 +1,5 @@
 baseURL = ''
-relativeURLS = true
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'TrickyTactics'
 
