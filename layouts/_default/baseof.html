@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ .Page.Title }} </title>
+
+	{{ $styles := resources.Get "/css/style.css" | postCSS }}
+
+	{{ if hugo.IsProduction }}
+	<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+	{{ else }}
+	{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+	<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+	{{ end }}
+
+	{{ $script := resources.Get "js/alpine.min.js" | resources.Minify }}
+	<script src="{{ $script.RelPermalink }}" defer></script>
+</head>
+<body>
+	{{ block "header" . }}
+	{{ end }}
+	{{ block "main" . }}
+	{{ end }}
+	{{ block "footer" . }}
+	{{ end }}
+</body>
+</html>

@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[build]
+  [build.postCSS]
+    includeFiles = "assets/css/*.css"
+    excludeFiles = "assets/css/ignore-*.css"
