@@ -1,4 +1,5 @@
 baseURL = ''
+relativeURLS = true
 languageCode = 'en-us'
 title = 'TrickyTactics'
 
