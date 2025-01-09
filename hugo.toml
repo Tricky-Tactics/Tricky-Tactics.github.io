@@ -1,4 +1,5 @@
-baseURL = 'https://tricky-tactics.github.io/'
+baseURL = ''
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'TrickyTactics'
 
