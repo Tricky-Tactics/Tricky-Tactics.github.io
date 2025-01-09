@@ -1,7 +1,7 @@
 ﻿<nav class="w-full text-gray-700 bg-white">
 	<div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
 		<div class="p-4 flex flex-row items-center justify-between">
-			<a href=href="{{ "/" | relURL }}">
+			<a href="{{ "/" | relURL }}">
 				{{ with resources.Get "images/logo.png" }}
 				<img src="{{ .RelPermalink }}" class="h-10 w-auto" alt="Logo"/>
 				{{ end }}
