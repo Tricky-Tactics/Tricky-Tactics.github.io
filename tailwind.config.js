@@ -32,6 +32,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            maxWidth: '100ch',
             color: theme('colors.primary_text.DEFAULT'),
             h1: {
               color: theme('colors.primary_text.DEFAULT'),

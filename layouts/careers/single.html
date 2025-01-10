@@ -6,8 +6,8 @@
 <div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8">
 	<div class="flex flex-col items-center lg:items-start mb-8 lg:mb-12 gap-y-2 lg:gap-y-4">
 		<span class="text-3xl font-black">{{ .Title }}</span>
-		{{ with .Resources.Get .Params.release_image }}
-		<img class="w-48 h-48 rounded-md object-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+		{{ with .Resources.Get .Params.career_image }}
+		<img class="h-48 rounded-md object-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
 		{{ end }}
 	</div>
 	<div class="prose">

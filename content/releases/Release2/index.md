@@ -1,9 +1,8 @@
 +++
-title = 'Release1'
+title = 'Patch Notes 2 - Pre Beta Patch Notes'
 date = 2025-01-09T12:19:29+01:00
 draft = false
 release_date = 2025-01-09
-release_title = 'Patch Notes 2 - Pre Beta Patch Notes'
 release_image = 'images/ReleaseNotes.png'
 +++
 
@@ -38,7 +37,7 @@ Due to the new set 00, we adjusted the rarity of the following units:
 Beside this, we adjusted some trick distribution as well as buff/nerf some strong units and weak units
 
 ## Woodcarver
-
+![Woodcarver](images/Woodcarver.png "Woodcarver")
 - ATK INT 1s → 0.9s
 - base: Crush! Attacks deal +10 DMG for rest of round (max. x4). → Attacks hit Surrounding opponents.
 - T3: Attacks hit Surrounding opponents but attacks 10% slower. → Crush & Crumble: Attacks deal +10 DMG for rest of round (max. +40).

@@ -556,7 +556,7 @@ video {
 
 .prose {
   color: #02070a;
-  max-width: 65ch;
+  max-width: 100ch;
 }
 
 .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1214,6 +1214,14 @@ video {
   width: 1.5rem;
 }
 
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
 .w-auto {
   width: auto;
 }
@@ -1232,6 +1240,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-none {
+  flex: none;
 }
 
 .flex-grow {
@@ -1338,6 +1350,10 @@ video {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .border-transparent {
@@ -1565,11 +1581,6 @@ video {
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-primary-light:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 182 225 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-secondary-light:hover {
