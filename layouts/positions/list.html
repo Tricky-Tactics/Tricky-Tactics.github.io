@@ -3,14 +3,14 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8">
-	<h1 class="text-3xl text-center font-bold mb-4">Empty Positions</h1>
+<div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8 w-full">
+	<h1 class="text-3xl text-center font-bold mb-6">Empty Positions</h1>
 	<div class="w-full flex flex-row border-b border-solid px-4 py-2">
 		<span class="flex-none w-[60%]">Title</span>
 		<span class="flex-none w-[20%]">Paid</span>
 		<span class="flex-none w-[20%]">Amount</span>
 	</div>
-	<ul>
+	<ul class="w-full">
 		{{ range .Pages }}
 		<li class="w-full">
 			<a href="{{ .Permalink }}" class="w-full">
