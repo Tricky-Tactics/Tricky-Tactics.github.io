@@ -1,0 +1,15 @@
+﻿{{ define "header" }}
+	{{ partial "topnav" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8">
+	<div class="prose">
+		{{ .Content }}
+	</div>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+	{{ partial "footer" }}
+{{ end }}
