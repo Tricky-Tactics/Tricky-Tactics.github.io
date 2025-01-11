@@ -3,11 +3,43 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8">
-	<h1 class="text-3xl text-center font-bold mb-6">Release Notes</h1>
+{{ $pages := slice }}
+{{ range .Sections }}
+{{ range .RegularPages }}
+{{ $pages = $pages | append . }}
+{{ end }}
+{{ end }}
+{{ $sortedPages := sort $pages ".Date" "desc" }}
+<div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8" x-data="{ activeFilter: 'all' }">
+	<h1 class="text-3xl text-center font-bold mb-6">Posts</h1>
+
+	<!-- Filter Buttons -->
+	<div class="flex flex-wrap gap-2 mb-8 justify-center">
+		<button
+				@click="activeFilter = 'all'"
+				class="px-4 py-2 rounded-lg transition-colors"
+				:class="activeFilter === 'all' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'"
+		>
+			All Posts
+		</button>
+		<!-- Get unique sections from your posts -->
+		{{ range .Sections }}
+		<button
+				@click="activeFilter = '{{ .Title }}'"
+				class="px-4 py-2 rounded-lg transition-colors"
+				:class="activeFilter === '{{ .Title }}' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'"
+		>
+			{{ .Title }}
+		</button>
+		{{ end }}
+	</div>
+
 	<div class="flex flex-col gap-y-8">
-		{{ range .Pages }}
-		<a href="{{ .Permalink }}">
+		{{ range $sortedPages }}
+		<a href="{{ .Permalink }}"
+		   x-show="activeFilter === 'all' || activeFilter === '{{ .CurrentSection.Title }}'"
+		   x-transition
+		>
 			<div class="flex flex-col lg:flex-row gap-y-1 lg:gap-x-4">
 				{{ with .Resources.Get .Params.release_image }}
 				<img class="w-32 h-32 rounded-md object-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
@@ -15,6 +47,7 @@
 				<div>
 					<div class="text-xl font-bold">{{ .Params.release_date }}</div>
 					<div class="text-xl font-bold">{{ .Title }}</div>
+					<div class="text-xl font-bold">{{ .CurrentSection.Title }}</div>
 				</div>
 			</div>
 		</a>
