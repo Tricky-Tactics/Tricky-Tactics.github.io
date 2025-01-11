@@ -3,24 +3,14 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8">
-	<h1 class="text-3xl text-center font-bold mb-6">Release Notes</h1>
-	<div class="flex flex-col gap-y-8">
-		{{ range .Pages }}
-		<a href="{{ .Permalink }}">
-			<div class="flex flex-col lg:flex-row gap-y-1 lg:gap-x-4">
-				{{ with .Resources.Get .Params.release_image }}
-				<img class="w-32 h-32 rounded-md object-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
-				{{ end }}
-				<div>
-					<div class="text-xl font-bold">{{ .Params.release_date }}</div>
-					<div class="text-xl font-bold">{{ .Title }}</div>
-				</div>
-			</div>
-		</a>
-		{{ end }}
-	</div>
-</div>
+<h1>Sections</h1>
+{{ range .Sections }}
+	<h2>{{ .Title }}</h2>
+	<h3>Test</h3>
+	{{ range .Pages }}
+		<h4>{{ .Title }}</h4>
+	{{ end }}
+{{ end }}
 {{ end }}
 
 {{ define "footer" }}
