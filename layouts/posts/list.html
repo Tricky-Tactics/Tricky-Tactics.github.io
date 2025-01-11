@@ -1,18 +1,55 @@
 ﻿{{ define "header" }}
-	{{ partial "topnav" }}
+{{ partial "topnav" }}
 {{ end }}
 
 {{ define "main" }}
-<h1>Sections</h1>
-{{ range .Sections }}
-	<h2>{{ .Title }}</h2>
-	<h3>Test</h3>
-	{{ range .Pages }}
-		<h4>{{ .Title }}</h4>
-	{{ end }}
-{{ end }}
+<div class="lg:max-w-7xl lg:mx-auto my-6 lg:my-10 px-4 lg:px-8">
+	<h1 class="text-3xl text-center font-bold mb-6">Posts</h1>
+
+	<!-- Filter Buttons -->
+	<div class="flex flex-wrap gap-2 mb-8 justify-center" x-data="{ activeFilter: 'all' }">
+		<button
+				@click="activeFilter = 'all'"
+				class="px-4 py-2 rounded-lg transition-colors"
+				:class="activeFilter === 'all' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'"
+		>
+			All Posts
+		</button>
+		{{ range .Sections }}
+		{{ $sectionName := .Section }}
+		<button
+				@click="activeFilter = '{{ $sectionName }}'"
+				class="px-4 py-2 rounded-lg transition-colors"
+				:class="activeFilter === '{{ $sectionName }}' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'"
+		>
+			{{ $sectionName }}
+		</button>
+		{{ end }}
+	</div>
+
+	<div class="flex flex-col gap-y-8">
+		{{ range .Pages }}
+		{{ $sectionName := .Section }}
+		<div>{{ $sectionName }}</div>
+		<a href="{{ .Permalink }}"
+		   x-show="activeFilter === 'all' || activeFilter === '{{ $sectionName }}'"
+		   x-transition
+		>
+			<div class="flex flex-col lg:flex-row gap-y-1 lg:gap-x-4">
+				{{ with .Resources.Get .Params.release_image }}
+				<img class="w-32 h-32 rounded-md object-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+				{{ end }}
+				<div>
+					<div class="text-xl font-bold">{{ .Params.release_date }}</div>
+					<div class="text-xl font-bold">{{ .Title }}</div>
+				</div>
+			</div>
+		</a>
+		{{ end }}
+	</div>
+</div>
 {{ end }}
 
 {{ define "footer" }}
-	{{ partial "footer" }}
+{{ partial "footer" }}
 {{ end }}
