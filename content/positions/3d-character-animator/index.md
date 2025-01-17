@@ -1,7 +1,7 @@
 ﻿+++
 title = '3d Character Animator'
 date = 2025-01-08T13:19:29+01:00
-draft = false
+draft = true
 paid = false
 amount = '2'
 career_image = 'images/3dCharacterAnimator.png'

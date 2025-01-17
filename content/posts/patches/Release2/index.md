@@ -1,7 +1,7 @@
 +++
 title = 'Patch Notes 2 - Pre Beta Patch Notes'
 date = 2025-01-09T12:19:29+01:00
-draft = false
+draft = true
 release_date = 2025-01-09
 release_image = 'images/ReleaseNotes.png'
 +++
