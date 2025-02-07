@@ -10,8 +10,43 @@
 		<img class="h-48 rounded-md object-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
 		{{ end }}
 	</div>
-	<div class="prose">
+	<div class="prose mb-16">
 		{{ .Content }}
+	</div>
+	<div class="grid sm:grid-cols-2 sm:max-w-7xl sm:mx-auto my-4 px-4 sm:px-8 sm:gap-x-24 gap-y-8 sm:gap-y-14">
+		<div class="order-1 lg:order-none">
+			<h3 class="text-3xl font-semibold tracking-tight sm:text-4xl text-center sm:text-left">
+				Interested ?
+			</h3>
+			<h5 class="text-xl font-semibold tracking-tight sm:text-2xl text-center sm:text-left">
+				Apply now!
+			</h5>
+			<div class="hidden sm:block mt-6">
+				<img class="object-top object-cover" src="/images/UnitGroupRender.png" alt="Group of Tricksters">
+			</div>
+		</div>
+		<div class="order-4 lg:order-none flex justify-center">
+			<form method="POST" action="https://formsubmit.co/f0032e4a17cb591fe1491233b494a5d4" enctype="multipart/form-data">
+				<input type="hidden" name="_captcha" value="false">
+				<h5 class="text-xl tracking-tight sm:text-2xl ">Name</h5>
+				<input class="rounded-md p-4 mb-6" type="text" name="name" placeholder="Type here" required>
+				<h5 class="text-xl tracking-tight sm:text-2xl ">Age</h5>
+				<input class="rounded-md p-4 mb-6" type="text" name="age" placeholder="Type here" required>
+				<h5 class="text-xl tracking-tight sm:text-2xl ">Email</h5>
+				<input class="rounded-md p-4 mb-6" type="email" name="email" placeholder="Type here" required>
+				<h5 class="text-xl tracking-tight sm:text-2xl ">CV or Portfolio</h5>
+				<div class="relative mb-6">
+					<input class="rounded-md p-4 w-full" type="text" id="portfolio-filename" placeholder="No file chosen" readonly>
+					<button type="button" class="absolute right-0 top-0 h-full px-4 bg-secondary-dark text-white rounded-r-md" onclick="document.getElementById('portfolio').click()">Add File</button>
+					<input class="hidden" type="file" id="portfolio" name="portfolio" accept="image/*, application/pdf" onchange="document.getElementById('portfolio-filename').value = this.files[0].name">
+				</div>
+				<h5 class="text-xl tracking-tight sm:text-2xl ">Link to portfolio or other site</h5>
+				<input class="rounded-md p-4 mb-6" type="url" name="portfolio_link" placeholder="Type here">
+				<div class="flex justify-center">
+					<button class="p-4 bg-secondary-dark text-white rounded-md" type="submit">Send application</button>
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 {{ end }}
