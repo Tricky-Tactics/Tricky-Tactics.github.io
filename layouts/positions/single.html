@@ -28,6 +28,9 @@
 		<div class="order-4 lg:order-none flex justify-center">
 			<form method="POST" action="https://formsubmit.co/f0032e4a17cb591fe1491233b494a5d4" enctype="multipart/form-data">
 				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_template" value="table">
+				<input type="hidden" name="_subject" value="New application for {{ .Title }}">
+<!--				<input type="hidden" name="_autoresponse" value="Thank you for applying! We will get back to you soon.">-->
 				<h5 class="text-xl tracking-tight sm:text-2xl ">Name</h5>
 				<input class="rounded-md p-4 mb-6" type="text" name="name" placeholder="Type here" required>
 				<h5 class="text-xl tracking-tight sm:text-2xl ">Age</h5>
