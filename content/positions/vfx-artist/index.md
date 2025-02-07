@@ -7,41 +7,30 @@ amount = '1'
 career_image = 'images/VFXArtist.png'
 +++
 
-We're looking for a talented 2D VFX Artist to create stunning visual effects for our 3D game project. This position offers an excellent opportunity to expand your portfolio and gain hands-on experience in game development.
-
-### Project Overview
-Join our team in crafting visually striking 2D effects that will seamlessly integrate into our 3D game environment. You'll have creative freedom to develop and establish the visual style of our game's effects system.
+We’re looking for a **VFX Artist** to create **stylized visual effects** for **Tricky Tactics**, a **3D mobile auto-chess** inspired by **Clash Mini**. This **volunteer role** is a great opportunity to **gain experience**, **build a portfolio**, and work on an exciting game project.
 
 ### Responsibilities
-- Design and create 2D visual effects for a 3D game environment
-- Develop concept art and mockups for various effect types
-- Animate and implement effects including projectiles, impact hits, and environmental VFX
-- Create tile-based effects that integrate with the game's environments
-- Design effect variations for different power levels and situations
-- Maintain consistent style across all visual effects
-- Document your creative process and maintain organized project files
-- Iterate on effects based on team feedback
+- Design and implement **attack**, **spell**, **environmental**, and **UI effects**
+- Create **stylized VFX** that enhance gameplay and match the game’s **chibi art style**
+- Work with **Godot’s VFX tools** and **particle systems**
+- Collaborate with the art and design teams to ensure effects align with the game's vision
+- Participate in **weekly Discord meetings** and maintain organized assets
 
 ### Requirements
-- Strong understanding of 2D animation principles
-- Proficiency in digital art software
-- Experience in creating frame-by-frame animation
-- Knowledge of particle systems and effect timing
-- Ability to create concept art and visualization sketches
-- Strong eye for color, movement, and visual impact
-- Must provide a portfolio demonstrating VFX work
-- Ability to work independently and manage deadlines
+- Strong understanding of **real-time VFX principles**
+- Experience with **Godot’s particle systems and shaders**
+- Ability to create **fluid**, **stylized effects** that enhance gameplay clarity
+- **Portfolio required** showcasing relevant work
+- **Reliable internet** & **personal workstation**
+- Ability to commit **10+ hours per week**
 
-### Nice to Have
-- Experience with sprite sheet animation
-- Understanding of technical constraints in game development
-- Background in traditional animation
-- Experience with motion graphics
-- Knowledge of shader systems
-- Previous game development experience
-- Familiarity with version control systems
+### Bonus Skills
+- Experience with **hand-painted or frame-by-frame VFX animation**
+- Familiarity with **shader creation in Godot**
+- Knowledge of Git, Figma, and Notion
+- Understanding of **animation principles** for VFX timing and impact
 
-### Time Commitment
-This is a flexible, unpaid position requiring approximately 10-15 hours per week. Must be able to attend weekly online team meetings.
-
-Please note: This is an unpaid, volunteer position intended for those looking to gain experience in game development and build their portfolio.
+### Why Join?
+- **Hands-on experience** in game development
+- Build a **strong portfolio**
+- Work **remotely with flexible hours**
