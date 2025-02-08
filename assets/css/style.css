@@ -1290,6 +1290,10 @@ video {
   width: 100%;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -1544,6 +1548,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-3xl {
@@ -1913,6 +1921,10 @@ video {
 
   .lg\:mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .lg\:w-\[75\%\] {
+    width: 75%;
   }
 
   .lg\:max-w-7xl {
