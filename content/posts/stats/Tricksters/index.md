@@ -7,7 +7,7 @@ release_image = 'images/Bucketeer.png'
 +++
 
 
-## Farmer
+# Farmer
 
 {{< image src="images/icons/FarmerIcon.png" alt="Farmer" title="Farmer" width="100" height="100" >}}
 
@@ -34,7 +34,7 @@ Slash deals +20 DMG.
 
 Wounded! +70% Speed and +10 DMG for 5s.
 
-## Bucketeer
+# Bucketeer
 
 {{< image src="images/icons/BucketeerIcon.png" alt="Bucketeer" title="Bucketeer" width="100" height="100" >}}
 
@@ -61,7 +61,7 @@ Wounded! Heal 20% HP to self and surrounding Friendly Units over 3s.
 
 Passive! Lasts the whole round instead
 
-## **Archer**
+# **Archer**
 
 {{< image src="images/icons/ArcherIcon.png" alt="Archer" title="Archer" width="100" height="100" >}}
 
@@ -88,7 +88,7 @@ Attack reach +2 tiles
 
 Attacks deal +20 DMG to Enemies 6+ tiles away
 
-## Garden Gnome
+# Garden Gnome
 
 {{< image src="images/icons/GardenGnomeIcon.png" alt="Garden Gnome" title="Garden Gnome" width="100" height="100" >}}
 
@@ -115,7 +115,7 @@ GO! +1 Pierce, reduce DMG by 60 after the first hit.
 
 Crush! Go +60 damage until the end of the match.
 
-## Haymaker
+# Haymaker
 
 {{< image src="images/icons/HaymakerIcon.png" alt="Haymaker" title="Haymaker" width="100" height="100" >}}
 
@@ -142,7 +142,7 @@ Attacks hit a Small Area.
 
 GO! Deal 50 DMG and push 1 to opponents in an area in front.
 
-## Batter
+# Batter
 
 {{< image src="images/icons/BatterIcon.png" alt="Batter" title="Batter" width="100" height="100" >}}
 
@@ -169,7 +169,7 @@ Crush! +20 ATK DMG for 5s.
 
 Every 75 HP lost, +10% Attack Speed
 
-## Dart Thrower
+# Dart Thrower
 
 {{< image src="images/icons/DartThrowerIcon.png" alt="Dart Thrower" title="Dart Thrower" width="100" height="100" >}}
 
@@ -196,7 +196,7 @@ Go! +10 attack damage for 6s
 
 For every Ally Unit Crushed this round: +10% Attack Speed.
 
-## Slinger
+# Slinger
 
 {{< image src="images/icons/SlingerIcon.png" alt="Slinger" title="Slinger" width="100" height="100" >}}
 
@@ -223,7 +223,7 @@ Attacks deal +10 DMG to healthy enemies.
 
 GO! This and Bordering Friendly Units attack 25% faster for 5s.
 
-## Scarecrow
+# Scarecrow
 
 {{< image src="images/icons/ScarecrowIcon.png" alt="Scarecrow" title="Scarecrow" width="100" height="100" >}}
 
@@ -250,7 +250,7 @@ After Rooted, Attacks deal +20 DMG for the rest of the round.
 
 Attacks 20% Faster and GO! no longer gives Peaceful.
 
-## Woodcarver
+# Woodcarver
 
 {{< image src="images/icons/WoodcarverIcon.png" alt="Woodcarver" title="Woodcarver" width="100" height="100" >}}
 
@@ -277,7 +277,7 @@ Wounded: +20 ATK DMG for the rest of the round.
 
 Crush & Crumble! Attacks deal +10 DMG for rest of round.
 
-## Assassin
+# Assassin
 
 {{< image src="images/icons/AssassinIcon.png" alt="Assassin" title="Assassin" width="100" height="100" >}}
 
@@ -304,7 +304,7 @@ Attacks apply Anti-heal for 4s.
 
 Wounded! Teleport behind the Healthiest enemy and gain Invisibility for 1s.
 
-## Hunter
+# Hunter
 
 {{< image src="images/icons/HunterIcon.png" alt="Hunter" title="Hunter" width="100" height="100" >}}
 
@@ -331,7 +331,7 @@ Reach is infinite instead.
 
 Wounded: attacks 30% faster and become invisible for 3s.
 
-## Seedling
+# Seedling
 
 {{< image src="images/icons/SeedlingIcon.png" alt="Seedling" title="Seedling" width="100" height="100" >}}
 
@@ -357,7 +357,7 @@ Revenge! Applies Rooted for 6s.
 
 Revenge! is within 3 tiles instead.
 
-## Scout
+# Scout
 
 {{< image src="images/icons/ScoutIcon.png" alt="Scout" title="Scout" width="100" height="100" >}}
 
@@ -386,7 +386,7 @@ Wounded! Attacks, moves and reloads twice as fast for 5s.
 
 Every Last Ammo deals +20 DMG.
 
-## Leaf Blower
+# Leaf Blower
 
 {{< image src="images/icons/LeafBlowerIcon.png" alt="Leaf Blower" title="Leaf Blower" width="100" height="100" >}}
 
@@ -414,7 +414,7 @@ Special! Deals +30 DMG.
 
 Special! deals push (1)
 
-## Herbalist
+# Herbalist
 
 {{< image src="images/icons/HerbalistIcon.png" alt="Herbalist" title="Herbalist" width="100" height="100" >}}
 
@@ -442,7 +442,7 @@ Special! heals a small area.
 
 Special costs 4 mana instead.
 
-## Mossy Elk
+# Mossy Elk
 
 {{< image src="images/icons/MossyElkIcon.png" alt="Mossy Elk" title="Mossy Elk" width="100" height="100" >}}
 
@@ -470,7 +470,7 @@ GO! Give +10 ATK to allies in a big area for 4s.
 
 Special! +30 DMG and stuns for 3s.
 
-## Forest Spirit
+# Forest Spirit
 
 {{< image src="images/icons/ForestSpiritIcon.png" alt="Forest Spirit" title="Forest Spirit" width="100" height="100" >}}
 
