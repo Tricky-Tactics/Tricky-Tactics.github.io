@@ -78,7 +78,7 @@ Attacks deal +20 damage to Enemies 4+ tiles away
 
 ### Trick 1 - Arrow Barrage
 
-GO! +50% ATK speed for 5s
+GO! +50% Attack Speed for 5s
 
 ### Trick 2 - Long Bow
 
@@ -128,17 +128,17 @@ Crush! Go +60 damage until the end of the match.
 
 ### Base Ability - Hay Armor
 
-Passive! +25% defense against enemies within 3 tiles.
+Passive! +25% Defense against enemies in range.
 
 ### Trick 1 - Thick Hay
 
-Passive! +25% more defense.
+Passive! +25% more Defense.
 
 ### Trick 2 - Big Shovel
 
-Attacks hit a small area.
+Attacks hit a Small Area.
 
-### Trick 3 - personal space
+### Trick 3 - Personal Space
 
 GO! Deal 50 DMG and push 1 to opponents in an area in front.
 
@@ -159,7 +159,7 @@ Attacks stack +8% Attack Speed for the rest of the round
 
 ### Trick 1 - No Limit!
 
-Attacks stack +2% more attack speed.
+Attacks stack +2% more Attack Speed.
 
 ### Trick 2 - Homerun
 
@@ -248,7 +248,7 @@ After Rooted, Attacks deal +20 DMG for the rest of the round.
 
 ### Trick 3 - Wicked Smile
 
-After Rooted, Attacks deal +20 DMG for the rest of the round.
+Attacks 20% Faster and GO! no longer gives Peaceful.
 
 ## Woodcarver
 
@@ -261,7 +261,7 @@ After Rooted, Attacks deal +20 DMG for the rest of the round.
 - Movement speed: Normal
 - Reach: Melee
 
-### Base Ability - Spin me round
+### Base Ability - Spin Me ´round
 
 Attacks hit surrounding opponents.
 
@@ -323,7 +323,7 @@ Attacks pierce through enemies.
 
 Arrows deal +10 damage for each opponent pierced.
 
-### Trick 2 - All-seeing
+### Trick 2 - All-Seeing
 
 Reach is infinite instead.
 
@@ -341,7 +341,7 @@ Wounded: attacks 30% faster and become invisible for 3s.
 - Movement Speed: Very Fast
 - Reach: Melee
 
-### Base Ability - Seed of doom
+### Base Ability - Seed of Doom
 
 Revenge! Deal 100 DMG and stun for 2s within 2 tiles.
 
@@ -466,7 +466,7 @@ Special also recovers 30% HP over 2s.
 
 GO! Give +10 ATK to allies in a big area for 4s.
 
-### Trick 3 - Ancient antlers
+### Trick 3 - Ancient Antlers
 
 Special! +30 DMG and stuns for 3s.
 
@@ -486,7 +486,7 @@ Special! +30 DMG and stuns for 3s.
 
 Special! Grant attack 20% Faster for 3s to 2 closest allies.
 
-### Trick 1 - Mana gift
+### Trick 1 - Mana Gift
 
 Special! Also gives 1 mana.
 
@@ -494,6 +494,6 @@ Special! Also gives 1 mana.
 
 Special! gains +1 Target.
 
-### Trick 3 - The power of Forest
+### Trick 3 - The Power of Forest
 
 Special! give allies +10 DMG for 2s.
