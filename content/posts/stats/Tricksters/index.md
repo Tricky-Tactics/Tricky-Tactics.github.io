@@ -117,6 +117,8 @@ Crush! Go +60 damage until the end of the match.
 
 ## Haymaker
 
+{{< image src="images/icons/HaymakerIcon.png" alt="Haymaker" title="Haymaker" width="100" height="100" >}}
+
 - Cost: 3 Gold
 - HP: [340/470/600]
 - ATK: 20
@@ -141,6 +143,8 @@ Attacks hit a small area.
 GO! Deal 50 DMG and push 1 to opponents in an area in front.
 
 ## Batter
+
+{{< image src="images/icons/BatterIcon.png" alt="Batter" title="Batter" width="100" height="100" >}}
 
 - Cost: 2 Gold
 - HP: [270/370/470]
@@ -167,6 +171,8 @@ Every 75 HP lost, +10% Attack Speed
 
 ## Dart Thrower
 
+{{< image src="images/icons/DartThrowerIcon.png" alt="Dart Thrower" title="Dart Thrower" width="100" height="100" >}}
+
 - Cost: 4 Gold
 - HP: [220/300/380]
 - ATK: 30
@@ -191,6 +197,8 @@ Go! +10 attack damage for 6s
 For every Ally Unit Crushed this round: +10% Attack Speed.
 
 ## Slinger
+
+{{< image src="images/icons/SlingerIcon.png" alt="Slinger" title="Slinger" width="100" height="100" >}}
 
 - Cost: 3 Gold
 - HP: [220/320/420]
@@ -217,6 +225,8 @@ GO! This and Bordering Friendly Units attack 25% faster for 5s.
 
 ## Scarecrow
 
+{{< image src="images/icons/ScarecrowIcon.png" alt="Scarecrow" title="Scarecrow" width="100" height="100" >}}
+
 - Cost: 4 Gold
 - HP: [450/600/750]
 - ATK: 30
@@ -241,6 +251,8 @@ After Rooted, Attacks deal +20 DMG for the rest of the round.
 After Rooted, Attacks deal +20 DMG for the rest of the round.
 
 ## Woodcarver
+
+{{< image src="images/icons/WoodcarverIcon.png" alt="Woodcarver" title="Woodcarver" width="100" height="100" >}}
 
 - Cost: 4 Gold
 - HP: [360/470/580]
@@ -267,6 +279,8 @@ Crush & Crumble! Attacks deal +10 DMG for rest of round.
 
 ## Assassin
 
+{{< image src="images/icons/AssassinIcon.png" alt="Assassin" title="Assassin" width="100" height="100" >}}
+
 - Cost: 2 Gold
 - HP: [250/340/430]
 - ATK: 30
@@ -291,6 +305,8 @@ Attacks apply Anti-heal for 4s.
 Wounded! Teleport behind the Healthiest enemy and gain Invisibility for 1s.
 
 ## Hunter
+
+{{< image src="images/icons/HunterIcon.png" alt="Hunter" title="Hunter" width="100" height="100" >}}
 
 - Cost: 4 Gold
 - HP: [300/390/480]
@@ -317,6 +333,8 @@ Wounded: attacks 30% faster and become invisible for 3s.
 
 ## Seedling
 
+{{< image src="images/icons/SeedlingIcon.png" alt="Seedling" title="Seedling" width="100" height="100" >}}
+
 - Cost: 2 Gold
 - ATK: 20
 - INT: 0.7s
@@ -340,6 +358,8 @@ Revenge! Applies Rooted for 6s.
 Revenge! is within 3 tiles instead.
 
 ## Scout
+
+{{< image src="images/icons/ScoutIcon.png" alt="Scout" title="Scout" width="100" height="100" >}}
 
 - Cost: 3 Gold
 - HP: [220/320/420]
@@ -368,6 +388,8 @@ Every Last Ammo deals +20 DMG.
 
 ## Leaf Blower
 
+{{< image src="images/icons/LeafBlowerIcon.png" alt="Leaf Blower" title="Leaf Blower" width="100" height="100" >}}
+
 - Cost: 3 Gold
 - HP:[260/340/420]
 - ATK: 20
@@ -393,6 +415,8 @@ Special! Deals +30 DMG.
 Special! deals push (1)
 
 ## Herbalist
+
+{{< image src="images/icons/HerbalistIcon.png" alt="Herbalist" title="Herbalist" width="100" height="100" >}}
 
 - Cost: 3 Gold
 - HP: [210/290/370]
@@ -420,6 +444,8 @@ Special costs 4 mana instead.
 
 ## Mossy Elk
 
+{{< image src="images/icons/MossyElkIcon.png" alt="Mossy Elk" title="Mossy Elk" width="100" height="100" >}}
+
 - Cost: 4 Gold
 - HP: [400/560/640]
 - ATK: 25
@@ -444,7 +470,9 @@ GO! Give +10 ATK to allies in a big area for 4s.
 
 Special! +30 DMG and stuns for 3s.
 
-## Forest spirit
+## Forest Spirit
+
+{{< image src="images/icons/ForestSpiritIcon.png" alt="Forest Spirit" title="Forest Spirit" width="100" height="100" >}}
 
 - Cost: 2 Gold
 - HP: [160/240/320]
