@@ -37,14 +37,8 @@
 				<input class="rounded-md p-4 mb-6 w-full" type="text" name="age" placeholder="Type here" required>
 				<h5 class="text-xl tracking-tight sm:text-2xl ">Email</h5>
 				<input class="rounded-md p-4 mb-6 w-full" type="email" name="email" placeholder="Type here" required>
-				<h5 class="text-xl tracking-tight sm:text-2xl ">CV or Portfolio</h5>
-				<div class="relative mb-6">
-					<input class="rounded-md p-4 w-full" type="text" id="portfolio-filename" placeholder="No file chosen" readonly>
-					<button type="button" class="absolute right-0 top-0 h-full px-4 bg-secondary-dark text-white rounded-r-md" onclick="document.getElementById('portfolio').click()">Add File</button>
-					<input class="hidden" type="file" id="portfolio" name="portfolio" accept="image/*, application/pdf" onchange="document.getElementById('portfolio-filename').value = this.files[0].name">
-				</div>
-				<h5 class="text-xl tracking-tight sm:text-2xl ">Link to portfolio or other site</h5>
-				<input class="rounded-md p-4 mb-6 w-full" type="url" name="portfolio_link" placeholder="Type here">
+				<h5 class="text-xl tracking-tight sm:text-2xl ">Portfolio link</h5>
+				<input class="rounded-md p-4 mb-6 w-full" type="url" name="portfolio_link" placeholder="Artstation / GitHub / etc." required>
 				<div class="flex justify-center">
 					<button class="p-4 bg-secondary-dark text-white rounded-md" type="submit">Send application</button>
 				</div>
