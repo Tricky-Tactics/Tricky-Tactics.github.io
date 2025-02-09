@@ -3,7 +3,7 @@ title = 'Trickster Stats'
 date = 2025-02-09T11:19:29+01:00
 draft = false
 release_date = 2025-02-09
-release_image = 'images/MossyElkXForestSpirit.png'
+release_image = 'images/Bucketeer.png'
 +++
 
 
