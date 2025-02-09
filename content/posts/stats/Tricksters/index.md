@@ -9,6 +9,8 @@ release_image = 'images/MossyElkXForestSpirit.png'
 
 ## Farmer
 
+{{< image src="images/icons/FarmerIcon.png" alt="Farmer" title="Farmer" width="100" height="100" >}}
+
 - Cost: 2 Gold
 - HP: [300/400/500]
 - ATK: 30
@@ -33,6 +35,8 @@ Slash deals +20 DMG.
 Wounded! +70% Speed and +10 DMG for 5s.
 
 ## Bucketeer
+
+{{< image src="images/icons/BucketeerIcon.png" alt="Bucketeer" title="Bucketeer" width="100" height="100" >}}
 
 - Cost: 3 Gold
 - HP: [380/520/660]
@@ -59,6 +63,8 @@ Passive! Lasts the whole round instead
 
 ## **Archer**
 
+{{< image src="images/icons/ArcherIcon.png" alt="Archer" title="Archer" width="100" height="100" >}}
+
 - Cost: 2 Gold
 - HP: [160/240/320]
 - ATK: 20
@@ -83,6 +89,8 @@ Attack reach +2 tiles
 Attacks deal +20 DMG to Enemies 6+ tiles away
 
 ## Garden Gnome
+
+{{< image src="images/icons/GardenGnomeIcon.png" alt="Garden Gnome" title="Garden Gnome" width="100" height="100" >}}
 
 - Cost: 3 Gold
 - HP: [240/360/480]
