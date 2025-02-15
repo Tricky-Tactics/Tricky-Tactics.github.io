@@ -21,3 +21,11 @@ From playing games to making them, we prioritize the player and player's feedbac
 {{< image src="images/CommunityBoard.png" alt="Community" title="Community" height="400" >}}
 
 We’re not just building a game; we’re building a community. Tricky Tactics is a journey we’re all taking together, and every step of the way, your feedback, your experiences, and your passion shape its future. Even in the early stages of the game's development, we were able to notice how talented our community is, they create drawings, fan concepts and much more, inspiring us to move forward!
+
+|               | **Sponsors**  |             |
+|:-------------:|:-------------:|:-----------:|
+|  Poke Master  |    Mirvox     | NumbNutNoir |
+|     Kayel     |     Spire     |    Zill     |
+|   Cheesegod   | SharpishSword |  VictorLhx  |
+| KrustyKenobi  |   PacMan82    |   Lolopie   |
+|   Memenorio   |  GanterPlay   |    Pyro     |
