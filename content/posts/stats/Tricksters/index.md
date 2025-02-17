@@ -336,6 +336,7 @@ Wounded: attacks 30% faster and become invisible for 3s.
 {{< image src="images/icons/SeedlingIcon.png" alt="Seedling" title="Seedling" width="100" height="100" >}}
 
 - Cost: 2 Gold
+- HP: [150/200/250]
 - ATK: 20
 - INT: 0.7s
 - Movement Speed: Very Fast
