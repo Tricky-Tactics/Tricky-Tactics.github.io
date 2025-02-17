@@ -1,7 +1,7 @@
 ﻿+++
 title = 'VFX Artist'
 date = 2025-01-08T12:19:29+01:00
-draft = true
+draft = false
 paid = false
 amount = '1'
 career_image = 'images/VFXArtist.png'
