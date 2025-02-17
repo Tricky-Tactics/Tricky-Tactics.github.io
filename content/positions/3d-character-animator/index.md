@@ -7,40 +7,32 @@ amount = '2'
 career_image = 'images/3dCharacterAnimator.png'
 +++
 
-We're seeking a passionate 3D Character Animator to join our game development team on a volunteer basis. This is an opportunity to gain valuable experience, build your portfolio, and be part of an exciting game project.
-
-### Project Overview
-Join our creative team in developing a unique game with a distinctive visual style. You'll have the creative freedom to help establish our game's signature animation style while working with experienced developers.
+Join our team as a **3D Character Animator** for **Tricky Tactics**, a **3D mobile auto-chess** inspired by Clash Mini. This is a **volunteer role** ideal for gaining experience, building a portfolio, and contributing to an exciting game project.
 
 ### Responsibilities
-- Create high-quality character animations including idle states, attack sequences, and jump animations
-- Develop and maintain consistent animation style throughout the project
-- Work independently on assigned animation tasks while meeting project milestones
-- Collaborate with the art team to ensure animations align with the game's visual direction
-- Participate in regular team meetings to discuss progress and receive feedback
-- Document animation processes and maintain organized animation files
+- Create **high-quality character animations** (idle, attack, movement, jump) in a **chibi art style**
+- Ensure a **consistent animation style** aligned with our visual direction
+- Work independently while **meeting project milestones**
+- Collaborate with the art team and participate in **Discord meetings**
+- Maintain organized animation assets
 
 ### Requirements
-- Strong understanding of animation principles and timing
-- Proficiency in industry-standard 3D animation software (Maya and/or Blender)
-- Experience in character animation and movement cycles
-- Ability to work independently and manage own schedule
-- Strong communication skills and ability to receive constructive feedback
+- Strong understanding of **animation principles and timing**
+- Proficiency in **Blender**
+- Experience in **character movement cycles and combat animations**
+- **Portfolio required** demonstrating relevant work
+- **Reliable internet** & **personal workstation**
 - Must provide a portfolio demonstrating character animation work
-- Reliable internet connection and personal workstation
-- Ability to commit to at least 10 hours per week
+- Ability to commit **10+ hours per week**
 
-### Nice to Have
-- Experience with 2.5D animation and perspective matching
+### Bonus Skills
+- Experience with **2.5D animation**, **rigging**, or **motion capture cleanup**
+- **Previous game development experience**
+- Familiarity with shader creation in **Godot**
+- Knowledge of **Git**, **Figma**, and **Notion**
 - Knowledge of character rigging and weight painting
-- Previous game development experience
-- Understanding of game engines (Unity/Unreal)
-- Experience with motion capture data cleanup
-- Background in traditional animation
-- Knowledge of version control systems (Git)
-- Experience working in remote teams
 
-### Time Commitment
-This is a flexible, unpaid position requiring approximately 10-15 hours per week. Must be able to attend weekly online team meetings.
-
-Please note: This is an unpaid, volunteer position intended for those looking to gain experience in game development and build their portfolio.
+### Why Join?
+- **Hands-on experience** in game development
+- Build a **strong portfolio**
+- Work **remotely with flexible hours**

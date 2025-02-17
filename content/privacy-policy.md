@@ -144,4 +144,4 @@ We may update this Privacy Policy and will notify You of changes via email or Se
 
 ## Contact Us
 
-For questions about this Privacy Policy, contact us by email: info@trickytactics.com
+For questions about this Privacy Policy, contact us by email: contact@trickytactics.com

@@ -10,8 +10,40 @@
 		<img class="h-48 rounded-md object-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
 		{{ end }}
 	</div>
-	<div class="prose">
+	<div class="prose mb-16">
 		{{ .Content }}
+	</div>
+	<div class="grid sm:grid-cols-2 sm:max-w-7xl sm:mx-auto my-4 px-4 sm:px-8 sm:gap-x-24 gap-y-8 sm:gap-y-14">
+		<div class="order-1 lg:order-none">
+			<h3 class="text-3xl font-semibold tracking-tight sm:text-4xl text-center sm:text-left">
+				Interested?
+			</h3>
+			<h5 class="text-xl font-semibold tracking-tight sm:text-2xl text-center sm:text-left">
+				Apply now!
+			</h5>
+			<div class="hidden sm:block mt-6">
+				<img class="object-top object-cover" src="/images/UnitGroupRender.png" alt="Group of Tricksters">
+			</div>
+		</div>
+		<div class="order-2 lg:order-none flex justify-center">
+			<form  class="w-full" method="POST" action="https://formsubmit.co/contact@trickytactics.com" enctype="multipart/form-data">
+				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_template" value="table">
+				<input type="hidden" name="_subject" value="New application for {{ .Title }}">
+<!--				<input type="hidden" name="_autoresponse" value="Thank you for applying! We will get back to you soon.">-->
+				<h5 class="text-xl tracking-tight sm:text-2xl">Name</h5>
+				<input class="rounded-md p-4 mb-6 w-full" type="text" name="name" placeholder="Type here" required>
+				<h5 class="text-xl tracking-tight sm:text-2xl">Age</h5>
+				<input class="rounded-md p-4 mb-6 w-full" type="text" name="age" placeholder="Type here" required>
+				<h5 class="text-xl tracking-tight sm:text-2xl ">Email</h5>
+				<input class="rounded-md p-4 mb-6 w-full" type="email" name="email" placeholder="Type here" required>
+				<h5 class="text-xl tracking-tight sm:text-2xl ">Portfolio link</h5>
+				<input class="rounded-md p-4 mb-6 w-full" type="url" name="portfolio_link" placeholder="Artstation / GitHub / etc." required>
+				<div class="flex justify-center">
+					<button class="p-4 bg-secondary-dark text-white rounded-md" type="submit">Send application</button>
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 {{ end }}
