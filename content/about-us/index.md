@@ -25,7 +25,7 @@ We’re not just building a game; we’re building a community. Tricky Tactics i
 |               | **Sponsors**  |             |
 |:-------------:|:-------------:|:-----------:|
 |  Poke Master  |    Mirvox     | NumbNutNoir |
-|     Kayel     |     Spire     |    Zill     |
+|     Kayel     |     Spyre     |    Zill     |
 |   Cheesegod   | SharpishSword |  VictorLhx  |
 | KrustyKenobi  |   PacMan82    |   Lolopie   |
 |   Memenorio   |  GanterPlay   |    Pyro     |
