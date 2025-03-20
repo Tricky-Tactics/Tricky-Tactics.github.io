@@ -53,7 +53,7 @@ After 8s holder explodes, dealing damage in an area. (30 DMG X Holders Total Cos
 
 ### **Base ability: «Leap»**
 
-GO! Unit jumps 3 tiles forward and gets Stunned for 2s.
+GO! Unit jumps 3 tiles forward and gets Stunned for 1s.
 
 # Shadow Veil
 
@@ -61,5 +61,5 @@ GO! Unit jumps 3 tiles forward and gets Stunned for 2s.
 
 ### **Base ability: «Vanish»**
 
-Wounded! Get Invisibility for 3s.
+Wounded! Get Invisibility for 4s.
 
