@@ -12,7 +12,7 @@ release_image = 'images/Bucketeer.png'
 {{< image src="images/icons/FarmerIcon.png" alt="Farmer" title="Farmer" width="100" height="100" >}}
 
 - Cost: 2 Gold
-- HP: [300/400/500]
+- HP: [290/390/490] (+100)
 - ATK: 30
 - INT: 0.9
 - Speed: Fast
@@ -20,26 +20,26 @@ release_image = 'images/Bucketeer.png'
 
 ### **Base Ability - Harvest**
 
-Ever 3rd attack Slash.
+Every 3 Attacks, Slash.
 
 ### Trick 1 - Pitchfork Riot
 
-Slash Every 2nd attack instead.
+Base Trick requires 2 attacks now. [-1 Attack Needed]
 
 ### Trick 2 - Bountiful
 
-Slash deals +20 DMG.
+Base Trick deals +20 DMG.
 
 ### Trick 3 - Hasty Season
 
-Wounded! +70% Speed and +10 DMG for 5s.
+Wounded! Heal 25% HP over 3s.
 
 # Bucketeer
 
 {{< image src="images/icons/BucketeerIcon.png" alt="Bucketeer" title="Bucketeer" width="100" height="100" >}}
 
 - Cost: 3 Gold
-- HP: [380/520/660]
+- HP:  [330/505/680] (+175)
 - ATK: 20
 - INT: 1.2s
 - Movement Speed: Very Slow
@@ -47,53 +47,53 @@ Wounded! +70% Speed and +10 DMG for 5s.
 
 ### Base Ability - Buckethead
 
-Passive! +20% Ranged Defense for 12s.
+Passive! +15% Defense for 10s.
 
 ### Trick 1 - Group Hug
 
-Passive increases Ranged Defense by 4% for every ally in the board.
+Passive! +35% Defense [+20% Defense].
 
 ### Trick 2 - Nugget's Soup
 
-Wounded! Heal 20% HP to self and surrounding Friendly Units over 3s.
+Wounded! This and surrounding Friendly Units Heal 20% HP over 3s.
 
 ### Trick 3 - Metal Bucket
 
-Passive! Lasts the whole round instead
+Base Trick Lasts the whole round instead.
 
 # **Archer**
 
 {{< image src="images/icons/ArcherIcon.png" alt="Archer" title="Archer" width="100" height="100" >}}
 
 - Cost: 2 Gold
-- HP: [160/240/320]
-- ATK: 20
+- HP: [140/210/280] (+70)
+- ATK: 17
 - INT: 1.4
 - Movement Speed: Normal
 - Reach: 6
 
 ### Base Ability - Snipe
 
-Attacks deal +20 damage to Enemies 4+ tiles away
+Attacks deal +18 DMG to Enemy Units 5+ Tiles away.
 
 ### Trick 1 - Arrow Barrage
 
-GO! +50% Attack Speed for 5s
+GO! +150% Speed for 5s.
 
 ### Trick 2 - Long Bow
 
-Attack reach +2 tiles
+Reach gets +3 Tiles.
 
 ### Trick 3 - Critical Hit
 
-Attacks deal +20 DMG to Enemies 6+ tiles away
+Base Trick 28 DMG. [+10 DMG]
 
 # Garden Gnome
 
 {{< image src="images/icons/GardenGnomeIcon.png" alt="Garden Gnome" title="Garden Gnome" width="100" height="100" >}}
 
 - Cost: 3 Gold
-- HP: [240/360/480]
+- HP: [180/280/380] (+100)
 - ATK: 20
 - INT: 1s
 - Movement Speed: Normal
@@ -101,134 +101,134 @@ Attacks deal +20 DMG to Enemies 6+ tiles away
 
 ### Base Ability - EJECT HAT
 
-GO! Launch a pointy hat, dealing 180 DMG to the First Thing in front.
+GO! Launch a pointy hat, dealing 230 DMG to the First Enemy Unit In Front.
 
 ### Trick 1 -  Sharpest Hat
 
-GO! Applies -50% defense for 5s.
+Base Trick deals -75% Defense for 7s. 
 
 ### Trick 2 - Pinpoint Hat
 
-GO! +1 Pierce, reduce DMG by 60 after the first hit.
+Base Trick  Pierces. (Deals -20% DMG per pierced unit)
 
 ### Trick 3 - Hatred
 
-Crush! Go +60 damage until the end of the match.
+Crush! Base Trick +60 DMG for the rest of the match. (stacks)
 
 # Haymaker
 
 {{< image src="images/icons/HaymakerIcon.png" alt="Haymaker" title="Haymaker" width="100" height="100" >}}
 
 - Cost: 3 Gold
-- HP: [340/470/600]
-- ATK: 20
-- INT: 1.1s
+- HP: [250/340/430] (+90)
+- ATK: 30
+- INT: 1s
 - Movement speed: Slow
 - Reach: 3
 
 ### Base Ability - Hay Armor
 
-Passive! +25% Defense against enemies in range.
+GO! Roll forward 4 tiles, dealing 30 DMG to Enemy Units in the way.
 
 ### Trick 1 - Thick Hay
 
-Passive! +25% more Defense.
+GO! Heal 40% HP over 5s.
 
 ### Trick 2 - Big Shovel
 
-Attacks hit a Small Area.
+GO! +15% Defense and Unstoppable for 10s.
 
 ### Trick 3 - Personal Space
 
-GO! Deal 50 DMG and push 1 to opponents in an area in front.
+After GO! Enemy Units Within 2 tiles get Slow 30% for 5s.
 
 # Batter
 
 {{< image src="images/icons/BatterIcon.png" alt="Batter" title="Batter" width="100" height="100" >}}
 
 - Cost: 2 Gold
-- HP: [270/370/470]
-- ATK: 30
+- HP: [260/350/440] (+90)
+- ATK: 24
 - INT: 1.2S
 - Movement Speed: Fast
 - Reach: Melee
 
 ## Base Ability - Fast and Furious
 
-Attacks stack +8% Attack Speed for the rest of the round
+Attacks stack +8% Attack Speed for the rest of the round. (Max. +160%)
 
 ### Trick 1 - No Limit!
 
-Attacks stack +2% more Attack Speed.
+Base Trick Stacks +14% Attack Speed. [+6% Increase]
 
 ### Trick 2 - Homerun
 
-Crush! +20 ATK DMG for 5s.
+Crush! +26 ATK DMG for 5s.
 
 ### Trick 3 - Last Base
 
-Every 75 HP lost, +10% Attack Speed
+Every 75 HP Lost +10% Attack Speed. (Stacks)
 
 # Dart Thrower
 
 {{< image src="images/icons/DartThrowerIcon.png" alt="Dart Thrower" title="Dart Thrower" width="100" height="100" >}}
 
 - Cost: 4 Gold
-- HP: [220/300/380]
-- ATK: 30
+- HP: [190/300/410] (+110)
+- ATK: 25
 - INT: 1.1S
 - Movement Speed: Normal
 - Reach: 4
 
 ### Base Ability - Bullseye
 
-Every 3rd attack deals x3 DMG
+Every 3 attacks deal X3 DMG.
 
 ### Trick 1 - Adrenaline Rush
 
-Crush! +40% Attack Speed for 5s
+Crush! +50% Attack Speed for 5s. (Stacks)
 
 ### Trick 2 - Showtime!
 
-Go! +10 attack damage for 6s
+GO! +15 ATK DMG for 7s.
 
 ### Trick 3 - Last Resort
 
-For every Ally Unit Crushed this round: +10% Attack Speed.
+Friendly Revenge, +15% Attack Speed to this for the rest of the round. (Stacks)
 
 # Slinger
 
 {{< image src="images/icons/SlingerIcon.png" alt="Slinger" title="Slinger" width="100" height="100" >}}
 
 - Cost: 3 Gold
-- HP: [220/320/420]
+- HP: [180/280/380] (+100)
 - ATK: 20
 - INT: 1.2
 - Speed: Fast
-- Reach: 5
+- Reach: 6
 
 ### Base Ability - Bouncing Boulders
 
-Attacks bounce twice to another Enemy within 2 tiles, after the first bounce DMG -10.
+Attacks Bounce Twice to another Enemy Unit Within 2 tiles.
 
 ### Trick 1 - Extra Bouncy!
 
-Attack bounce doesn’t reduce DMG and Bounce Reach +1 Tile.
+Base Trick Bounces Within 3 Tiles. [+ 1 Tile]
 
 ### Trick 2 - “Rock 'n' Roll”
 
-Attacks deal +10 DMG to healthy enemies.
+Attacks deal +20 DMG to Healthy Enemy Units.
 
 ### Trick 3 - Rebellion
 
-GO! This and Bordering Friendly Units attack 25% faster for 5s.
+GO! This and Bordering Friendly Units +33% Speed for 5s.
 
 # Scarecrow
 
 {{< image src="images/icons/ScarecrowIcon.png" alt="Scarecrow" title="Scarecrow" width="100" height="100" >}}
 
 - Cost: 4 Gold
-- HP: [450/600/750]
+- HP: [415/565/715] (+135)
 - ATK: 30
 - INT: 0.9s
 - Movement speed: Slow
@@ -236,80 +236,80 @@ GO! This and Bordering Friendly Units attack 25% faster for 5s.
 
 ### Base Ability - Ominous
 
-GO! Gain Rooted and Peaceful for 8s.
+GO! Root to the ground Peacefully for 8s. 
 
 ### Trick 1 - Thorny
 
-While Rooted, Reflect up to 30 DMG.
+While Rooted, Reflect up to 35 DMG.
 
 ### Trick 2 - Bird Fever
 
-After Rooted, Attacks deal +20 DMG for the rest of the round.
+After Rooted, Get X2 DMG.
 
 ### Trick 3 - Wicked Smile
 
-Attacks 20% Faster and GO! no longer gives Peaceful.
+Base Ability Doesn't make this peaceful. (+20% Attack Speed)
 
 # Woodcarver
 
 {{< image src="images/icons/WoodcarverIcon.png" alt="Woodcarver" title="Woodcarver" width="100" height="100" >}}
 
 - Cost: 4 Gold
-- HP: [360/470/580]
+- HP: [325/435/545] (+110)
 - ATK: 40
-- INT: 0.9s
+- INT: 1.1s
 - Movement speed: Normal
 - Reach: Melee
 
 ### Base Ability - Spin Me ´round
 
-Attacks hit surrounding opponents.
+Attacks hit Surrounding Tiles.
 
 ### Trick 1 - Field Snack
 
-Crush: Recovers 20% HP Instantly.
+Crush! Heal 20% HP Instantly.
 
 ### Trick 2 - Second Wind
 
-Wounded: +20 ATK DMG for the rest of the round.
+Wounded! +30 ATK DMG for the rest of the round.
 
 ### Trick 3 - Sharpening
 
-Crush & Crumble! Attacks deal +10 DMG for rest of round.
+Crush! +20% Speed for the rest of round. (Max. +80%)
 
 # Assassin
 
 {{< image src="images/icons/AssassinIcon.png" alt="Assassin" title="Assassin" width="100" height="100" >}}
 
 - Cost: 2 Gold
-- HP: [250/340/430]
-- ATK: 30
+- HP: [225/315/405] (+90)
+- ATK: 25
 - INT: 0.9s
 - Movement Speed: Very Fast
 - Reach: Melee
 
 ### Base Ability - Fatality
 
-Attacks Executes opponents below 20% HP.
+Executes Enemy Units below 22% HP.
 
 ### Trick 1 - Worthy Opponent
 
-Attacks now Execute opponents below 30% HP.
+Executes Enemy Units below 35% HP. [+13% Execute]
 
 ### Trick 2 - Barbed Knife
 
-Attacks apply Anti-heal for 4s.
+Attacks apply Anti-heal for 6s.
 
 ### Trick 3 - Smoke Bomb
 
-Wounded! Teleport behind the Healthiest enemy and gain Invisibility for 1s.
+Wounded! Teleport behind the Furthest Enemy Unit, +20% Speed and become Invisible for 2s.
 
 # Hunter
 
 {{< image src="images/icons/HunterIcon.png" alt="Hunter" title="Hunter" width="100" height="100" >}}
 
 - Cost: 4 Gold
-- HP: [300/390/480]
+- HP: [200/310/420] (+110)
 - ATK: 40
 - INT: 1.4s
 - Movement Speed: Normal
@@ -317,184 +317,186 @@ Wounded! Teleport behind the Healthiest enemy and gain Invisibility for 1s.
 
 ### Base Ability - Magical Pierce
 
-Attacks pierce through enemies.
+Attacks Pierce through Enemy Units.
 
 ### Trick 1 - Breakthrough
 
-Arrows deal +10 damage for each opponent pierced.
+Arrows deal +20 DMG for each Enemy Unit Pierced.
 
 ### Trick 2 - All-Seeing
 
-Reach is infinite instead.
+Crush! get +50% ATK SPD for 4s. (Stacks)
 
 ### Trick 3 - Mystical Escape
 
-Wounded: attacks 30% faster and become invisible for 3s.
+Wounded! get X2 DMG and becomes Invisible for 3s.
 
 # Seedling
 
 {{< image src="images/icons/SeedlingIcon.png" alt="Seedling" title="Seedling" width="100" height="100" >}}
 
-- Cost: 2 Gold
-- HP: [150/200/250]
+- Cost: 3 Gold
+- HP: [215/270/325] (+55)
 - ATK: 20
-- INT: 0.7s
-- Movement Speed: Very Fast
+- INT: 0.9s
+- Movement Speed: Fast
 - Reach: Melee
 
 ### Base Ability - Seed of Doom
 
-Revenge! Deal 100 DMG and stun for 2s within 2 tiles.
+Revenge! Deal 100 DMG and Stun for 2s to Surrounding Enemy Units.
 
 ### Trick 1 - Acorn Rage
 
-Revenge! DMG increased to 180 DMG.
+Base Trick DMG increased to 180 DMG.
 
 ### Trick 2 - Tangle
 
-Revenge! Applies Rooted for 6s.
+Base Trick Applies Rooted for 9s.
 
 ### Trick 3 - Bigger Boom
 
-Revenge! is within 3 tiles instead.
+Explosion range Increased. [+1 Tile]
 
 # Scout
 
 {{< image src="images/icons/ScoutIcon.png" alt="Scout" title="Scout" width="100" height="100" >}}
 
 - Cost: 3 Gold
-- HP: [220/320/420]
-- ATK: 30
-- INT: 0.8s
-- Reload: 1.2s
-- Ammo: 2
+- HP: [190/290/390] (+100)
+- ATK: 28
+- INT: 0.5s
+- Reload: 2s
+- Ammo: 4
 - Movement Speed: Normal
 - Reach: 4
 
 ### Base Ability - Double Shot
 
-Attacks alternate between 2 enemies in range.
+Attacks Alternate between 4 enemies in range.
 
 ### Trick 1 - Second Wind
 
-Recover 15% HP Instantly after reloading.
+After Reload, Heal 10% HP Instantly.
 
 ### Trick 2 - Focus
 
-Wounded! Attacks, moves and reloads twice as fast for 5s.
+Wounded! +100% Speed for 5s.
 
 ### Trick 3 - Last Resort
 
-Every Last Ammo deals +20 DMG.
+If there are 3+ Opponents in range, +15 DMG.
 
 # Leaf Blower
 
 {{< image src="images/icons/LeafBlowerIcon.png" alt="Leaf Blower" title="Leaf Blower" width="100" height="100" >}}
 
 - Cost: 3 Gold
-- HP:[260/340/420]
+- HP: [190/290/390] (+100)
 - ATK: 20
 - INT: 1.1s
 - Mana: 1/5
 - Movement Speed: Normal
-- Reach: 4
+- Reach: 3
 
 ### Base Ability - Leaf Stream
 
-Special! Blow 3 leaves at different opponents, dealing 60 DMG.
+Special! Blow 3 leaves at Different Enemy Units, dealing 60 DMG each.
 
 ### Trick 1 - Leaf Storm
 
-Special! leaves blown increased to 5 but costs 7 mana instead.
+Base Trick leaves blown increased to 5. [+2 Targets]
 
 ### Trick 2 - Sharpen
 
-Special! Deals +30 DMG.
+Base Trick +30 DMG.
 
 ### Trick 3 - Strong Winds
 
-Special! deals push (1)
+Base Trick Pushes Back 1 Tile.
 
 # Herbalist
 
 {{< image src="images/icons/HerbalistIcon.png" alt="Herbalist" title="Herbalist" width="100" height="100" >}}
 
 - Cost: 3 Gold
-- HP: [210/290/370]
+- HP: [140/220/300] (+80)
 - ATK: 20
-- INT: 1s
-- Mana: 1/6
+- INT: 0.9s
+- Mana: 2/6
 - Movement Speed: Slow
 - Reach: 5
 
 ### Base Ability - Herbal Pack
 
-Special! Weakest ally recovers 30% HP.
+Special! Target the Weakest Friendly Unit, Healing 40% HP.
 
 ### Trick 1 - Potent Herbs
 
-Special clears all negative effects.
+Base Trick Clears all Negative Effects.
 
 ### Trick 2 - Green Cross
 
-Special! heals a small area.
+Base Trick Heals a Small Area bordering the Weakest Friendly Unit. [+4 Tiles]
 
 ### Trick 3 - Faster Production
 
-Special costs 4 mana instead.
+Base Trick costs 4 Mana. [-2 Cost]
 
 # Mossy Elk
 
 {{< image src="images/icons/MossyElkIcon.png" alt="Mossy Elk" title="Mossy Elk" width="100" height="100" >}}
 
 - Cost: 4 Gold
-- HP: [400/560/640]
+- HP: [400/560/720] (+160)
 - ATK: 25
 - INT: 1.3s
 - Mana: 2/7
-- Movement Speed: Very Slow
+- Movement Speed: Slow
 - Reach: Melee
+
+Absorption
 
 ### Base Ability - Headstrong
 
-Special! Deal 50 DMG and push 2 tiles.
+Special! Deal 50 DMG and Push Back 2 Tiles.
 
 ### Trick 1 - Standby Recovery
 
-Special also recovers 30% HP over 2s.
+Base Trick also Heals 15% HP instantly.
 
 ### Trick 2 - Battle Scream
 
-GO! Give +10 ATK to allies in a big area for 4s.
+GO! +15 ATK DMG to Friendly Units in a Big Area for 10s.
 
 ### Trick 3 - Ancient Antlers
 
-Special! +30 DMG and stuns for 3s.
+Base Trick +70 DMG and Stuns for 3s.
 
 # Forest Spirit
 
 {{< image src="images/icons/ForestSpiritIcon.png" alt="Forest Spirit" title="Forest Spirit" width="100" height="100" >}}
 
 - Cost: 2 Gold
-- HP: [160/240/320]
+- HP: [140/220/300] (+80)
 - ATK: 10
 - INT: 1s
-- Mana: 1/5
+- Mana: 1/6
 - Movement Speed: Fast
 - Reach: 5
 
 ### Base Ability - Blessing of Haste
 
-Special! Grant attack 20% Faster for 3s to 2 closest allies.
+Special! Grants the 2 Closest Friendly Units +33% Speed for 4s.
 
 ### Trick 1 - Mana Gift
 
-Special! Also gives 1 mana.
+Base Trick also gives 2 Mana.
 
 ### Trick 2 - Friendly
 
-Special! gains +1 Target.
+Base Trick Targets 3 Friendly Units. [+1 Target]
 
 ### Trick 3 - The Power of Forest
 
-Special! give allies +10 DMG for 2s.
+Base Trick also gives +10 DMG for 4s.
