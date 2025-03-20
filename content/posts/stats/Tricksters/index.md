@@ -14,7 +14,7 @@ release_image = 'images/Bucketeer.png'
 - Cost: 2 Gold
 - HP: [290/390/490] (+100)
 - ATK: 30
-- INT: 0.9
+- INT: 0.9s
 - Speed: Fast
 - Reach: Melee
 
@@ -68,7 +68,7 @@ Base Trick Lasts the whole round instead.
 - Cost: 2 Gold
 - HP: [140/210/280] (+70)
 - ATK: 17
-- INT: 1.4
+- INT: 1.4s
 - Movement Speed: Normal
 - Reach: 6
 
@@ -366,7 +366,7 @@ Explosion range Increased. [+1 Tile]
 - HP: [190/290/390] (+100)
 - ATK: 28
 - INT: 0.5s
-- Reload: 2s
+- Reload: 1.6s
 - Ammo: 4
 - Movement Speed: Normal
 - Reach: 4
