@@ -3,7 +3,7 @@ title = 'Welcome Gears!'
 date = 2025-04-25T12:00:00+01:00
 draft = false
 release_date = 2025-03-20
-release_image = 'images/FrogCharmPortrait.png'
+release_image = 'images/GearsRender.png'
 +++
 
 
