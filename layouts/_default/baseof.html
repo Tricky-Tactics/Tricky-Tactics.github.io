@@ -24,7 +24,7 @@
 	{{ $script := resources.Get "js/alpine.min.js" | resources.Minify }}
 	<script src="{{ $script.RelPermalink }}" defer></script>
 </head>
-<body class="flex flex-col min-h-screen m-0 bg-primary_background text-primary_text">
+<body class="flex flex-col min-h-screen m-0 bg-background text-on_everything">
 	<div class="flex-1 flex flex-col">
 	{{ block "header" . }}
 	{{ end }}

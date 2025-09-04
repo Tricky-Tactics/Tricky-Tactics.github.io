@@ -555,7 +555,7 @@ video {
 }
 
 .prose {
-  color: #02070a;
+  color: var(--tw-prose-body);
   max-width: 100ch;
 }
 
@@ -688,7 +688,7 @@ video {
 }
 
 .prose :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  color: #02070a;
+  color: var(--tw-prose-headings);
   font-weight: 800;
   font-size: 2.25em;
   margin-top: 0;
@@ -702,7 +702,7 @@ video {
 }
 
 .prose :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  color: #02070a;
+  color: var(--tw-prose-headings);
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 2em;
@@ -716,7 +716,7 @@ video {
 }
 
 .prose :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  color: #02070a;
+  color: var(--tw-prose-headings);
   font-weight: 600;
   font-size: 1.25em;
   margin-top: 1.6em;
@@ -730,7 +730,7 @@ video {
 }
 
 .prose :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  color: #02070a;
+  color: var(--tw-prose-headings);
   font-weight: 600;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -1069,6 +1069,10 @@ video {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .absolute {
@@ -1428,23 +1432,22 @@ video {
   border-style: solid;
 }
 
+.border-on_everything\/10 {
+  border-color: rgb(15 15 15 / 0.1);
+}
+
 .border-transparent {
   border-color: transparent;
 }
 
-.bg-blue-600 {
+.bg-background {
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-200 {
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
-.bg-primary_background {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 250 253 / var(--tw-bg-opacity, 1));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-secondary-dark {
@@ -1464,6 +1467,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .object-cover {
@@ -1587,14 +1594,19 @@ video {
   letter-spacing: -0.025em;
 }
 
-.text-primary {
+.text-background {
   --tw-text-opacity: 1;
-  color: rgb(57 166 219 / var(--tw-text-opacity, 1));
+  color: rgb(230 230 230 / var(--tw-text-opacity, 1));
 }
 
-.text-primary_text {
+.text-on_everything {
   --tw-text-opacity: 1;
-  color: rgb(2 7 10 / var(--tw-text-opacity, 1));
+  color: rgb(15 15 15 / var(--tw-text-opacity, 1));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
 }
 
 .text-secondary {
@@ -1677,14 +1689,14 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.hover\:bg-background-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 192 192 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-gray-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-secondary-light:hover {
@@ -1692,18 +1704,27 @@ video {
   background-color: rgb(244 194 197 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-primary_text:hover {
+.hover\:text-on_everything:hover {
   --tw-text-opacity: 1;
-  color: rgb(2 7 10 / var(--tw-text-opacity, 1));
+  color: rgb(15 15 15 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-primary_text-light:hover {
+.hover\:text-on_everything-light:hover {
   --tw-text-opacity: 1;
-  color: rgb(8 29 43 / var(--tw-text-opacity, 1));
+  color: rgb(45 45 45 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-on_everything\/50:hover {
+  color: rgb(15 15 15 / 0.5);
 }
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.focus\:bg-background-dark:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 192 192 / var(--tw-bg-opacity, 1));
 }
 
 .focus\:bg-gray-200:focus {
@@ -1711,9 +1732,9 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
-.focus\:text-primary_text:focus {
+.focus\:text-on_everything:focus {
   --tw-text-opacity: 1;
-  color: rgb(2 7 10 / var(--tw-text-opacity, 1));
+  color: rgb(15 15 15 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -1736,9 +1757,9 @@ video {
   --tw-ring-offset-width: 2px;
 }
 
-.group:hover .group-hover\:text-primary_text {
+.group:hover .group-hover\:text-on_everything {
   --tw-text-opacity: 1;
-  color: rgb(2 7 10 / var(--tw-text-opacity, 1));
+  color: rgb(15 15 15 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 640px) {
