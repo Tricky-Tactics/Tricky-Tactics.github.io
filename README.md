@@ -12,8 +12,9 @@ It is hosted with GitHub Pages and [Netlify](https://www.netlify.com/).
 ```zsh
 git clone https://github.com/Tricky-Tactics/Tricky-Tactics.github.io.git
 ```
-3. Open the repository in your terminal.
-4. Start the project by running the following command:
+3. Open the repository folder in your terminal.
+4. Install the dependencies with: ```npm install```
+5. Start the project by running the following command:
 ```npm run start```
 
 ## Contributing
