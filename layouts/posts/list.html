@@ -18,7 +18,7 @@
 		<button
 				@click="activeFilter = 'all'"
 				class="px-4 py-2 rounded-lg transition-colors"
-				:class="activeFilter === 'all' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'"
+				:class="activeFilter === 'all' ? 'bg-primary text-background' : 'bg-none hover:bg-background-dark'"
 		>
 			All Posts
 		</button>
@@ -27,7 +27,7 @@
 		<button
 				@click="activeFilter = '{{ .Title }}'"
 				class="px-4 py-2 rounded-lg transition-colors"
-				:class="activeFilter === '{{ .Title }}' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'"
+				:class="activeFilter === '{{ .Title }}' ? 'bg-primary text-background' : 'bg-none hover:bg-background-dark'"
 		>
 			{{ .Title }}
 		</button>
