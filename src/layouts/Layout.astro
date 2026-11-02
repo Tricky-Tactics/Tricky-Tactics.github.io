@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
 import Arrow from '../components/Arrow.astro';
-import PaletteSwitcher from '../components/PaletteSwitcher.astro';
 interface Props { title?: string; description?: string; home?: boolean }
 const {
   title = 'Tricky Tactics — Small board. Big strategy.',
@@ -15,7 +14,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0d0e2b" />
+    <meta name="theme-color" content="#0a0a0a" />
     <link rel="preload" href="/fonts/lilita-one.woff2" as="font" type="font/woff2" crossorigin />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -44,7 +43,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="Tricky Tactics home"><img src="/images/Logo.png" width="585" height="300" alt="Tricky Tactics" /></a>
-        <div class="header-center"><span class="header-beta">CLOSED BETA</span><nav aria-label="Main navigation">
+        <div class="header-center"><nav aria-label="Main navigation">
           <a href="/#gameplay">Gameplay</a>
           <a href="/#tricksters">Tricksters</a>
           <a href="/#development">What’s next</a>
@@ -57,12 +56,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <div class="container footer-top">
         <div><a class="brand" href="/" aria-label="Tricky Tactics home"><img src="/images/Logo.png" width="585" height="300" alt="Tricky Tactics" loading="lazy" /></a><p>The newest auto battler in town.</p></div>
         <div class="footer-links">
-          <div><span class="footer-heading">THE PROJECT</span><a href="/about-us/">Our story</a><a href="https://drive.google.com/drive/folders/1En4KFWsUwFB57tg6rZrtM6hcsyWly1Gr">Media &amp; fan kit <Arrow diagonal /></a></div>
-          <div><span class="footer-heading">FIND US AROUND</span><a href="https://discord.gg/77vxzeYKTG">Discord <Arrow diagonal /></a><a href="https://www.youtube.com/channel/UCZBW0uVcWoXLzol7JT7IIug">YouTube <Arrow diagonal /></a><a href="https://x.com/TrickyTactics">X / Twitter <Arrow diagonal /></a><a href="https://ko-fi.com/trickytactics">Support on Ko-fi <Arrow diagonal /></a></div>
+          <div><span class="footer-heading">The project</span><a href="/about-us/">Our story</a><a href="https://drive.google.com/drive/folders/1En4KFWsUwFB57tg6rZrtM6hcsyWly1Gr">Media &amp; fan kit <Arrow diagonal /></a></div>
+          <div><span class="footer-heading">Find us around</span><a href="https://discord.gg/77vxzeYKTG">Discord <Arrow diagonal /></a><a href="https://www.youtube.com/channel/UCZBW0uVcWoXLzol7JT7IIug">YouTube <Arrow diagonal /></a><a href="https://x.com/TrickyTactics">X / Twitter <Arrow diagonal /></a><a href="https://ko-fi.com/trickytactics">Support on Ko-fi <Arrow diagonal /></a></div>
         </div>
       </div>
-      <div class="container footer-bottom"><span>© {new Date().getFullYear()} Tricky Tactics Team</span><div><a href="/privacy-policy/">Privacy policy</a><a href="/terms-of-service/">Terms of service</a></div><span class="footer-signoff">STAY CLEVER. STAY TRICKY.</span></div>
+      <div class="container footer-bottom"><span>© {new Date().getFullYear()} Tricky Tactics Team</span><div><a href="/privacy-policy/">Privacy policy</a><a href="/terms-of-service/">Terms of service</a></div><span class="footer-signoff">Stay clever, stay tricky</span></div>
     </footer>
-    <PaletteSwitcher />
   </body>
 </html>
