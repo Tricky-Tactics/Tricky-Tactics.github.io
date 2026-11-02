@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face { font-family: 'Lilita One'; src: url('../../static/fonts/lilita-one.woff2') format('woff2'); }
+  @font-face { font-family: 'DM Sans'; src: url('../../static/fonts/dm-sans.woff2') format('woff2'); font-weight: 400 700; }
+  html, body { margin: 0; }
+  .card { position: relative; width: 1200px; height: 630px; overflow: hidden; background: #fff; color: #0a0a0a; font-family: 'DM Sans', sans-serif; }
+  .bar { position: absolute; inset: 0 0 auto; height: 88px; background: #0a0a0a; display: flex; align-items: center; padding-inline: 72px; }
+  .bar img { width: 150px; filter: invert(1); }
+  .copy { position: absolute; left: 72px; top: 184px; }
+  .eyebrow { font-family: 'Lilita One'; font-size: 28px; color: #e8282b; margin: 0 0 16px; }
+  h1 { font-family: 'Lilita One'; font-weight: 400; font-size: 96px; line-height: .95; white-space: nowrap; letter-spacing: .01em; text-transform: uppercase; margin: 0; }
+  h1 span { color: #e8282b; }
+  .status { display: flex; align-items: center; gap: 12px; margin-top: 40px; font-size: 26px; font-weight: 500; }
+  .status i { width: 12px; height: 12px; border-radius: 50%; background: #e8282b; }
+  .art { position: absolute; filter: drop-shadow(0 20px 20px #00000040); }
+  .hexcaster { width: 330px; left: 740px; top: 170px; transform: rotate(-8deg); }
+  .frog { width: 320px; left: 880px; top: 260px; transform: rotate(6deg); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="bar"><img src="../../static/images/Logo.png" alt="" /></div>
+    <div class="copy">
+      <p class="eyebrow">The newest auto battler in town</p>
+      <h1>Small board.<br />Big <span>strategy.</span></h1>
+      <p class="status"><i></i>Currently in closed beta</p>
+    </div>
+    <img class="art hexcaster" src="../../src/assets/characters/hexcaster-three-quarter.webp" alt="" />
+    <img class="art frog" src="../../src/assets/characters/frog-witch.webp" alt="" />
+  </div>
+</body>
+</html>
