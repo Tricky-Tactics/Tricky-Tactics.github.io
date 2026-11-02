@@ -5,9 +5,9 @@ const background = Buffer.from(`<svg width="1200" height="630" xmlns="http://www
   <circle cx="955" cy="325" r="310" fill="#dce5b8"/>
   <g fill="#203d32" font-family="sans-serif">
     <text x="65" y="105" font-size="23" font-weight="700" letter-spacing="3">TRICKY TACTICS</text>
-    <text x="60" y="260" font-size="82" font-weight="800" letter-spacing="-4">Little squad.</text>
+    <text x="60" y="260" font-size="82" font-weight="800" letter-spacing="-4">Small board.</text>
     <text x="60" y="350" font-size="82" font-weight="800" letter-spacing="-4" fill="#ad472c">Big strategy.</text>
-    <text x="65" y="410" font-size="24">The squad-building auto battler.</text>
+    <text x="65" y="410" font-size="24">The newest auto battler in town.</text>
     <rect x="65" y="477" width="265" height="49" rx="7" fill="#203d32"/>
     <text x="88" y="509" font-size="19" font-weight="700" fill="#f8f6ec">Currently in closed beta</text>
   </g>

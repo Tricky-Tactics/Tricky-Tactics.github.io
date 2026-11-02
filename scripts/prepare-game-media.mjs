@@ -25,7 +25,7 @@ function ffmpeg(args) {
   if (result.status !== 0) throw new Error('ffmpeg failed');
 }
 
-for (const [second, name] of [[16, 'positioning'], [204, 'battle'], [184, 'battle-poster']]) {
+for (const [second, name] of [[16, 'positioning'], [204, 'battle'], [191, 'battle-poster']]) {
   const frame = spawnSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-ss', String(second),
     '-i', recording, '-frames:v', '1', '-vf', 'scale=900:-2', '-f', 'image2pipe', '-c:v', 'png', '-'],
     { maxBuffer: 20 * 1024 * 1024 });
@@ -34,7 +34,7 @@ for (const [second, name] of [[16, 'positioning'], [204, 'battle'], [184, 'battl
 }
 
 // A native-orientation excerpt: preparation, then battle. Audio is intentionally omitted.
-ffmpeg(['-ss', '184', '-i', recording, '-t', '31', '-an', '-vf', 'scale=720:-2,fps=30',
+ffmpeg(['-ss', '191', '-i', recording, '-t', '24', '-an', '-vf', 'scale=720:-2,fps=30',
   '-c:v', 'libx264', '-crf', '25', '-preset', 'medium', '-pix_fmt', 'yuv420p',
   '-movflags', '+faststart', new URL('gameplay-beta.mp4', videos).pathname]);
 
