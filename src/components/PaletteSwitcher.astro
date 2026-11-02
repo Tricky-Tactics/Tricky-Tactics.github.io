@@ -1,5 +1,5 @@
 ---
-// Dev-only tool for comparing colour palettes. Rendered by Layout only under `astro dev`.
+// Temporary tool for comparing colour palettes on the live site; remove once a palette is chosen.
 const palettes = [
   { id: 'night', name: 'Night & blue (current)' },
   { id: 'royal', name: 'Royal red' },
@@ -13,7 +13,7 @@ const palettes = [
   { id: 'ink-paper', name: 'B&W, white hero + red accent' },
 ];
 ---
-<div class="palette-switcher" role="group" aria-label="Colour palette (dev only)">
+<div class="palette-switcher" role="group" aria-label="Colour palette">
   <span>Palette</span>
   {palettes.map((palette) => <button type="button" data-palette={palette.id}>{palette.name}</button>)}
   <span>Grid</span>

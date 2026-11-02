@@ -63,6 +63,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       </div>
       <div class="container footer-bottom"><span>© {new Date().getFullYear()} Tricky Tactics Team</span><div><a href="/privacy-policy/">Privacy policy</a><a href="/terms-of-service/">Terms of service</a></div><span class="footer-signoff">STAY CLEVER. STAY TRICKY.</span></div>
     </footer>
-    {import.meta.env.DEV && <PaletteSwitcher />}
+    <PaletteSwitcher />
   </body>
 </html>
