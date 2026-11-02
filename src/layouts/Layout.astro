@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import Arrow from '../components/Arrow.astro';
+interface Props { title?: string; description?: string; home?: boolean }
+const {
+  title = 'Tricky Tactics — Little squad. Big strategy.',
+  description = 'Meet Tricky Tactics, the mobile squad-building auto battler. Build your team, master the board, and follow development. Closed beta now; open beta planned for 2027.',
+  home = false,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d0e2b" />
+    <link rel="preload" href="/fonts/lilita-one.woff2" as="font" type="font/woff2" crossorigin />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Tricky Tactics" />
+    <meta property="og:image" content={new URL('/images/social-card.png', Astro.site)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Tricky Tactics — Little squad. Big strategy. Currently in closed beta." />
+    <meta name="twitter:card" content="summary_large_image" />
+    {home && <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org', '@type': 'VideoGame', name: 'Tricky Tactics',
+      url: Astro.site?.href, description, genre: 'Auto battler', inLanguage: 'en',
+      image: new URL('/images/social-card.png', Astro.site).href,
+    })} />}
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Tricky Tactics home"><img src="/images/Logo.png" width="585" height="300" alt="Tricky Tactics" /></a>
+        <div class="header-center"><span class="header-beta">CLOSED BETA</span><nav aria-label="Main navigation">
+          <a href="/#gameplay">Gameplay</a>
+          <a href="/#tricksters">Tricksters</a>
+          <a href="/#development">What’s next</a>
+        </nav></div>
+        <a class="button button-small" href="/#community"><span>Join the community</span> <Arrow diagonal /></a>
+      </div>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div><a class="brand" href="/" aria-label="Tricky Tactics home"><img src="/images/Logo.png" width="585" height="300" alt="Tricky Tactics" loading="lazy" /></a><p>Little squad. Big strategy.<br />A game for the players, by the players.</p></div>
+        <div class="footer-links">
+          <div><span class="footer-heading">THE PROJECT</span><a href="/about-us/">Our story</a><a href="https://drive.google.com/drive/folders/1En4KFWsUwFB57tg6rZrtM6hcsyWly1Gr">Media &amp; fan kit <Arrow diagonal /></a></div>
+          <div><span class="footer-heading">FIND US AROUND</span><a href="https://discord.gg/77vxzeYKTG">Discord <Arrow diagonal /></a><a href="https://www.youtube.com/channel/UCZBW0uVcWoXLzol7JT7IIug">YouTube <Arrow diagonal /></a><a href="https://x.com/TrickyTactics">X / Twitter <Arrow diagonal /></a><a href="https://ko-fi.com/trickytactics">Support on Ko-fi <Arrow diagonal /></a></div>
+        </div>
+      </div>
+      <div class="container footer-bottom"><span>© {new Date().getFullYear()} Tricky Tactics Team</span><div><a href="/privacy-policy/">Privacy policy</a><a href="/terms-of-service/">Terms of service</a></div><span class="footer-signoff">STAY CLEVER. STAY TRICKY.</span></div>
+    </footer>
+  </body>
+</html>

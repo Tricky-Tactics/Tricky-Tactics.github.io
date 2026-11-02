@@ -1,0 +1,209 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Arrow from '../components/Arrow.astro';
+import PhoneMockup from '../components/PhoneMockup.astro';
+import { Image } from 'astro:assets';
+import gears from '../../static/images/Gears.png';
+import battle from '../assets/game/battle.webp';
+import positioning from '../assets/game/positioning.webp';
+import poster from '../assets/game/battle-poster.webp';
+import deck from '../assets/game/deck.webp';
+import hexcasterFront from '../assets/characters/hexcaster-front.webp';
+import hexcasterHero from '../assets/characters/hexcaster-three-quarter.webp';
+import hexcasterProfile from '../assets/characters/hexcaster-profile.webp';
+import frogWitch from '../assets/characters/frog-witch.webp';
+import skeleton from '../assets/characters/skeleton.webp';
+import nuggetTeary from '../assets/characters/nugget-teary.webp';
+import nuggetPanic from '../assets/characters/nugget-panic.webp';
+import nuggetGrin from '../assets/characters/nugget-grin.webp';
+import nuggetSparkle from '../assets/characters/nugget-sparkle.webp';
+
+const discord = 'https://discord.gg/77vxzeYKTG';
+const emotes = [
+  { image: nuggetTeary, alt: 'Teary chicken emote' },
+  { image: nuggetPanic, alt: 'Panicking chicken emote' },
+  { image: nuggetGrin, alt: 'Grinning chicken emote' },
+  { image: nuggetSparkle, alt: 'Sparkling chicken emote' },
+];
+const screenshots = [
+  { image: deck, label: 'Build your squad', alt: 'A six-Trickster deck with an equipped Gear in the closed-beta deck builder' },
+  { image: positioning, label: 'Make your move', alt: 'Tricksters positioned on a tiled battlefield before automated combat' },
+  { image: battle, label: 'Let the battle unfold', alt: 'Two squads clash on a battlefield with terrain and special tiles' },
+];
+---
+<Layout home>
+  <main id="main">
+    <section class="hero-section checker" aria-labelledby="hero-heading">
+      <div class="container hero">
+        <div class="hero-copy">
+          <a class="status-pill" href="#development"><span class="status-dot" aria-hidden="true"></span> IN THE MAKING. ALREADY TRICKY. <Arrow /></a>
+          <p class="eyebrow hero-genre">THE SQUAD-BUILDING AUTO BATTLER</p>
+          <h1 id="hero-heading">Little squad.<br />Big <span>strategy.</span></h1>
+          <p class="hero-description">Pick your Tricksters. Find your perfect combo. Outsmart the board. A little planning goes a long way in Tricky Tactics.</p>
+          <div class="hero-actions">
+            <a class="button" href={discord}>Follow development <Arrow diagonal /></a>
+            <a class="text-link" href="#gameplay"><span class="play-icon" aria-hidden="true">▶</span> See how it plays</a>
+          </div>
+          <p class="hero-availability"><span class="status-current"><span class="status-dot" aria-hidden="true"></span> Currently in closed beta</span><span class="availability-divider" aria-hidden="true">/</span><span>Open beta planned for 2027</span></p>
+        </div>
+        <div class="hero-scene">
+          <div class="hero-board">
+            <PhoneMockup screen={battle} alt="Actual Tricky Tactics beta combat shown inside an iPhone frame" />
+          </div>
+          <Image class="hero-character hero-hexcaster" src={hexcasterHero} widths={[300, 500, 700]} sizes="(max-width: 600px) 47vw, 290px" alt="Hexcaster, a masked Trickster with a flowing purple cloak and green gemstone" loading="eager" />
+          <Image class="hero-character hero-frog-witch" src={frogWitch} widths={[300, 500, 700]} sizes="(max-width: 600px) 48vw, 310px" alt="Frog Witch, a red frog carrying a small skeleton on its back" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section id="gameplay" class="gameplay-section" aria-labelledby="gameplay-heading">
+      <div class="container gameplay-layout">
+        <div class="gameplay-copy">
+          <p class="eyebrow light-eyebrow">SMALL BOARD. BIG POSSIBILITIES.</p>
+          <h2 id="gameplay-heading">Good plans.<br /><span>Glorious chaos.</span></h2>
+          <p class="section-intro">You make the calls before the clash. Your Tricksters take it from there.</p>
+          <ol class="gameplay-steps">
+            <li><span class="step-number" aria-hidden="true">01</span><div><h3>Build your kind of squad.</h3><p>Mix Tricksters and Gears. Find combinations that bring out the best in your team.</p></div></li>
+            <li><span class="step-number" aria-hidden="true">02</span><div><h3>Make every tile count.</h3><p>Read the terrain and position your squad. A clever placement can change the fight.</p></div></li>
+            <li><span class="step-number" aria-hidden="true">03</span><div><h3>Watch your plan come alive.</h3><p>The battle plays out automatically. See what works, adapt, and come back with a better plan.</p></div></li>
+          </ol>
+        </div>
+        <div class="gameplay-media">
+          <div class="gameplay-video-frame">
+            <PhoneMockup loading="lazy">
+              <video controls playsinline preload="none" poster={poster.src} aria-label="31 seconds of Tricky Tactics closed-beta gameplay, showing squad preparation followed by automated combat" aria-describedby="video-caption">
+                <source src="/videos/gameplay-beta.mp4" type="video/mp4" />
+                <p>Your browser does not support video. <a href="/videos/gameplay-beta.mp4">Watch the gameplay clip</a>.</p>
+              </video>
+            </PhoneMockup>
+          </div>
+          <p id="video-caption" class="media-caption">Captured in closed beta · In development<br /><a href="/videos/gameplay-beta.mp4">Open gameplay clip <Arrow diagonal /></a></p>
+          <Image class="gameplay-companion" src={skeleton} widths={[180, 360]} sizes="(max-width: 800px) 130px, 180px" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="tricksters" class="squad-section" aria-labelledby="squad-heading">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">A LITTLE PERSONALITY GOES A LONG WAY</p><h2 id="squad-heading">Your squad.<br /><span class="serif-accent">Your signature.</span></h2></div>
+          <p>No two game plans need to look alike. Bring together your favorite Tricksters, experiment with Gears, and add a little attitude.</p>
+        </div>
+        <div class="squad-showcase">
+          <article class="squad-feature">
+            <div class="feature-label"><span>01 / THE TRICKSTERS</span><span aria-hidden="true">↗</span></div>
+            <h3>Not your average<br />dream team.</h3>
+            <p>Meet Hexcaster and Frog Witch.<br />Just two of the personalities on the board.</p>
+            <div class="featured-tricksters">
+              <figure class="featured-hexcaster"><Image src={hexcasterFront} widths={[300, 500, 700]} sizes="(max-width: 600px) 45vw, 310px" alt="Hexcaster wears a skull-patterned mask, gold earrings and a purple cloak" loading="lazy" /><figcaption>Hexcaster</figcaption></figure>
+              <figure class="featured-frog-witch"><Image src={frogWitch} widths={[300, 500, 700]} sizes="(max-width: 600px) 45vw, 320px" alt="Frog Witch wears a green vest and carries a skeleton companion" loading="lazy" /><figcaption>Frog Witch</figcaption></figure>
+            </div>
+          </article>
+          <div class="squad-side">
+            <article class="gear-feature">
+              <div><div class="feature-label">02 / THE GEARS</div><h3>Small Gears.<br />Big ideas.</h3><p>Find the extra edge<br />for your strategy.</p></div>
+              <Image src={gears} width={400} alt="A selection of equippable Gears from Tricky Tactics" loading="lazy" />
+            </article>
+            <article class="emote-feature">
+              <div class="feature-label">03 / THE ATTITUDE</div>
+              <h3>Say it with a chicken.</h3>
+              <div class="emote-lineup">{emotes.map((emote) => <Image src={emote.image} widths={[100, 180, 260]} sizes="(max-width: 600px) 18vw, 100px" alt={emote.alt} loading="lazy" />)}</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots-section" aria-labelledby="screenshots-heading">
+      <div class="container">
+        <div class="section-heading split-heading gallery-heading"><div><p class="eyebrow">STRAIGHT FROM THE GAME</p><h2 id="screenshots-heading">A closer look.</h2></div><p>Real screenshots. Real strategies.<br />A work in progress, with plenty of personality.</p></div>
+        <div class="screenshot-gallery">
+          {screenshots.map((shot, index) => (
+            <figure>
+              <button class="screenshot-button" type="button" data-full={shot.image.src} data-alt={shot.alt} data-caption={shot.label} aria-label={`Enlarge screenshot: ${shot.label}`}>
+                <PhoneMockup screen={shot.image} alt={shot.alt} loading="lazy" sizes="(max-width: 600px) 68vw, 300px" />
+                <span class="screenshot-expand" aria-hidden="true">↗</span>
+              </button>
+              <figcaption><span>0{index + 1}</span> {shot.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="development" class="development-section" aria-labelledby="development-heading">
+      <div class="container">
+        <div class="section-heading split-heading"><div><p class="eyebrow">THE NEXT CHAPTER IS TAKING SHAPE</p><h2 id="development-heading">Small team.<br />Going places.</h2></div><div><p>We’re auto-battler fans making the game we want to play. Tricky Tactics is in closed beta, and there’s more ahead.</p><a class="text-link" href="/about-us/">Meet the team <Arrow /></a></div></div>
+        <ol class="roadmap">
+          <li class="roadmap-current"><span class="roadmap-label"><span class="status-dot" aria-hidden="true"></span> WHERE WE ARE</span><h3>Closed beta</h3><p>Testing, learning, and refining the game with our beta players.</p><span class="roadmap-tag">In progress</span></li>
+          <li><span class="roadmap-label">WHAT’S NEXT</span><h3>Open beta</h3><p>More players. More feedback. The next step toward release.</p><span class="roadmap-tag">Planned for 2027</span></li>
+          <li><span class="roadmap-label">THE BIG PICTURE</span><h3>Full release</h3><p>A game built with its community, ready for its next chapter.</p><span class="roadmap-tag">Date to be announced</span></li>
+        </ol>
+        <p class="roadmap-disclaimer">Plans may change as development continues. Follow our community for the latest updates.</p>
+      </div>
+    </section>
+
+    <section id="community" class="community-section checker" aria-labelledby="community-heading">
+      <div class="container community-inner">
+        <div class="community-copy"><p class="eyebrow light-eyebrow">NOT JUST WATCHING. PART OF IT.</p><h2 id="community-heading">Good games start<br />with <span>good people.</span></h2><p>Trade strategies, follow development, and help shape what comes next. There’s a place for you in the Tricky Tactics community.</p><a class="button" href={discord}>Join our Discord <Arrow diagonal /></a><p class="community-note">Closed beta now. Follow along for open-beta news.</p></div>
+        <div class="community-art"><Image src={hexcasterProfile} widths={[400, 600, 800]} sizes="(max-width: 700px) 80vw, 440px" alt="Hexcaster turns toward the community invitation, purple cloak trailing behind" loading="lazy" /></div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="container faq-layout">
+        <div><p class="eyebrow">A FEW THINGS TO KNOW</p><h2 id="faq-heading">Before your<br />first move.</h2></div>
+        <div class="faq-list">
+          <details><summary>What is Tricky Tactics?<span aria-hidden="true">+</span></summary><p>Tricky Tactics is a mobile auto battler. Build a squad of Tricksters, combine them with Gears, and position them on the board. Combat then plays out automatically, putting your preparation and strategy to the test.</p></details>
+          <details><summary>Can I play right now?<span aria-hidden="true">+</span></summary><p>The game is currently in closed beta, not public release. <a href={discord}>Join our Discord</a> for current testing information and development updates. Joining the community does not guarantee beta access.</p></details>
+          <details><summary>When is open beta?<span aria-hidden="true">+</span></summary><p>Open beta is planned for 2027, ahead of full release. Exact dates haven’t been announced, and plans may change as development continues.</p></details>
+          <details><summary>How can I support or work with the team?<span aria-hidden="true">+</span></summary><p>Support the project on <a href="https://ko-fi.com/trickytactics">Ko-fi</a>, or <a href={discord}>contact the team on Discord</a> about sponsorships and partnerships.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="screenshot-dialog" aria-labelledby="screenshot-caption">
+    <div class="dialog-toolbar"><p id="screenshot-caption"></p><button class="dialog-close" type="button" aria-label="Close screenshot">Close <span aria-hidden="true">×</span></button></div>
+    <img class="dialog-image" alt="" />
+  </dialog>
+</Layout>
+
+<script>
+  const scene = document.querySelector<HTMLElement>('.hero-scene');
+  const phone = scene?.querySelector<HTMLElement>('.hero-board');
+  const tiltEnabled = window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
+  if (scene && phone) {
+    const resetTilt = () => {
+      phone.style.removeProperty('--phone-tilt-x');
+      phone.style.removeProperty('--phone-tilt-y');
+    };
+    scene.addEventListener('pointermove', (event) => {
+      if (!tiltEnabled.matches || event.pointerType !== 'mouse') return;
+      const bounds = scene.getBoundingClientRect();
+      const x = Math.max(-1, Math.min(1, (event.clientX - bounds.left) / bounds.width * 2 - 1));
+      const y = Math.max(-1, Math.min(1, (event.clientY - bounds.top) / bounds.height * 2 - 1));
+      phone.style.setProperty('--phone-tilt-x', `${-y * 4}deg`);
+      phone.style.setProperty('--phone-tilt-y', `${x * 6}deg`);
+    });
+    scene.addEventListener('pointerleave', resetTilt);
+    tiltEnabled.addEventListener('change', resetTilt);
+    window.addEventListener('blur', resetTilt);
+  }
+  const dialog = document.querySelector<HTMLDialogElement>('.screenshot-dialog');
+  const image = dialog?.querySelector<HTMLImageElement>('.dialog-image');
+  const caption = dialog?.querySelector<HTMLElement>('#screenshot-caption');
+  const close = () => dialog?.close();
+  if (dialog && image && caption) {
+    document.querySelectorAll<HTMLButtonElement>('.screenshot-button').forEach((button) => {
+      button.addEventListener('click', () => {
+        image.src = button.dataset.full ?? '';
+        image.alt = button.dataset.alt ?? '';
+        caption.textContent = button.dataset.caption ?? '';
+        dialog.showModal();
+      });
+    });
+    dialog.querySelector('.dialog-close')?.addEventListener('click', close);
+    dialog.addEventListener('click', (event) => { if (event.target === dialog) close(); });
+  }
+</script>

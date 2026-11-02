@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import frame from '../assets/devices/iphone-16-pro-figma.webp';
+
+interface Props {
+  screen?: ImageMetadata;
+  alt?: string;
+  loading?: 'eager' | 'lazy';
+  sizes?: string;
+}
+const { screen, alt = '', loading = 'eager', sizes = '(max-width: 600px) 49vw, 240px' } = Astro.props;
+---
+<span class="phone-mockup">
+  <span class="phone-screen">
+    <slot>
+      {screen && <Image src={screen} widths={[350, 550, 750]} sizes={sizes} alt={alt} loading={loading} fetchpriority={loading === 'eager' ? 'high' : 'auto'} />}
+    </slot>
+  </span>
+  <Image class="phone-bezel" src={frame} width={450} height={920} alt="" aria-hidden="true" loading={loading} />
+</span>
+
+<style>
+  /* Figma 1:1188: 402 × 874 viewport, with the bezel extending 24px left and 23px up. */
+  .phone-mockup { display: block; position: relative; width: 100%; aspect-ratio: 450 / 920; isolation: isolate; filter: drop-shadow(0 24px 30px #0006); }
+  .phone-screen { position: absolute; left: calc(100% * 24 / 450); top: calc(100% * 23 / 920); width: calc(100% * 402 / 450); height: calc(100% * 874 / 920); border-radius: calc(100% * 32 / 402) / calc(100% * 32 / 874); overflow: hidden; background: #11151c; }
+  .phone-screen :global(img), .phone-screen :global(video) { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .phone-bezel { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+</style>

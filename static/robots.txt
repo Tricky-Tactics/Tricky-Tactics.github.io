@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trickytactics.com/sitemap.xml

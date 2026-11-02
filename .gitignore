@@ -1,5 +1,7 @@
 ﻿node_modules/
 resources/
-public/
+dist/
+.astro/
+.netlify/
 .idea/
 .hugo_build.lock
